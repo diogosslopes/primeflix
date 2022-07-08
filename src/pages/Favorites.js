@@ -1,9 +1,19 @@
 import '../../src/App.css';
 
 function Favorites() {
+  const primeFlix = JSON.parse( localStorage.getItem("primeFlix"))
+
+  console.log(primeFlix)
   return (
-    <div>
-      <h1>Pagina Favoritos</h1>
+    <div className='favorites-list'>
+      {primeFlix.map((f=>{
+        return(
+          <div>
+            <p>ID: {f.id}</p>
+            <p>Nome: {f.title}</p>
+          </div>
+        )
+      }))}
     </div>
   );
 }
