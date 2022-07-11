@@ -1,4 +1,5 @@
 import '../../src/App.css';
+import { toast } from 'react-toastify'
 
 function Buttons(props) {
     const { movie } = props
@@ -11,10 +12,11 @@ function Buttons(props) {
         let favoritesMovies = JSON.parse(primeFlix) || []
 
         if (favoritesMovies.some((f) => f.id == movie.id)) {
-            alert("Filme já está salvo")
+            toast.warn("Filme já está salvo")
         } else {
             favoritesMovies.push(movie)
             localStorage.setItem("primeFlix", JSON.stringify(favoritesMovies))
+            toast.success("Filme salvo")
         }
 
     }

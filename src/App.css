@@ -44,7 +44,7 @@ header{
 }
 
 .favorites:hover{
-  box-shadow: 2px 2px 7px white;
+box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.486);
 transition-duration: .3s;  
 }
 
@@ -168,3 +168,42 @@ transition: all .5s ease-out;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.356);
 }
 
+table{
+  margin-top: 20px;
+  background-color: rgba(211, 211, 211, 0.274);
+  border-radius: 5px;
+  
+}
+
+.table-favorites th{
+  padding: 2px 15px;
+  text-align: left;
+}
+
+.table-favorites td{
+  padding: 10px;
+  text-align: left;
+}
+
+.table-favorites td + td + td {
+  text-align: center;
+}
+
+.table-favorites button{
+  background-color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
+
+.table-favorites button:hover{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.356);
+}
+
+tr:hover{
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.356);
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
