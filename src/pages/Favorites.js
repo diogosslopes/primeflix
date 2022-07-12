@@ -30,7 +30,7 @@ function Favorites() {
               <tr>
                 <td>{f.id}</td>
                 <td>{f.title}</td>
-                <td>{f.vote_average}</td>
+                <td>{f.vote}</td>
                 <td><a href={`https://www.youtube.com/results?search_query=${f.title} trailer`} target="_blank" rel="external"><img src={require('../img/youtube20x20.png')} /></a></td>
                 <td>
                   <Link to={`/movie/${f.id}`}>

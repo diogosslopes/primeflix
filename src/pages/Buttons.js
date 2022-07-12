@@ -2,9 +2,16 @@ import '../../src/App.css';
 import { toast } from 'react-toastify'
 
 function Buttons(props) {
-    const { movie } = props
+    let movie = {
+        id: props.movie.id,
+        title: props.movie.title,
+        img1: props.movie.poster_path,
+        img2: props.movie.backdrop_path,
+        vote: props.movie.vote_average,
+        overview: props.movie.overview,
+        release: props.movie.release_date
+      }
     console.log(movie)
-
 
     const saveMovie = () => {
 

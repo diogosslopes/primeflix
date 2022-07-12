@@ -15,9 +15,11 @@ function Home() {
         page: 1
       }
     })
+
     setFilmes(result.data.results)
     setLoading(false)
   }
+
 
   useEffect(() => {
     getMovies()
